@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Taiwan Trip</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="timeline.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--header part-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#dashboard" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="#/detail/index.html" class="nav-link px-2 text-white" target="_self">Features</a></li>
+              <li><a href="#pricing" class="nav-link px-2 text-white">Pricing</a></li>
+            </ul>
+    
+            <!--form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form-->
+    
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+  <div id="dashboard"></div>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="photo/mountain.jpg" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2>Do you want have a special trip in Taiwan?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="photo/snorkeling.jpg" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2>Do you want have some adventure activities in Taiwan?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item text-start">
+        <img src="photo/cherry_blossom.jpg" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption  text-start">
+            <h2>Do you want viewing cherry blossom in Taiwan?</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container-fluid marketing" >
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="photo/Schedule.jpg" width="100%" height="100%">
+        <h2 class="fw-normal">Schedule</h2>
+        <p>This is our tour schedule specially made for foreigners</p>
+        <p><a class="btn btn-secondary" href="#Schedule">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="https://support.avaza.com/wp-content/uploads/2019/03/Schedule-Details-Report-Screenshot.jpg" width="100%" height="100%">
+        <h2 class="fw-normal">Itinerary Details</h2>
+        <p>Something else you can read more....</p>
+        <p><a class="btn btn-secondary" href="/detail/index.html">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="https://www.b2binternational.com/wp-content/uploads/2014/12/07July-Price.png" width="100%" height="100%">
+        <h2 class="fw-normal">Pricing</h2>
+        <p>How much is this trip?</p>
+        <p><a class="btn btn-secondary" href="#pricing">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <div class="row featurette bg-black">
+      <div class="col-md-7">
+        <br>
+        <h4 class="featurette-heading-white text-uppercase "><a name="Schedule" id="Schedule"></a>Part1: Schedule</h4>
+      </div>
+      <!--timeline-->
+      <br>
+        <iframe class="timeline-wrapper bg-black" name= "timeline" src="timeline/index.html" width="300" height="600" FRAMEBORDER="2"></iframe>
+    </div>
+
+    <hr class="featurette-divider">
+    <h4 class="featurette-heading text-uppercase" id ="pricing">Part2: Pricing</h4>
+    <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-3 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Plan A + C</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$25520-26820</h1>
+            <ul class="list-unstyled mt-3 mb-3">
+              <li>• Mountain Trip</li>
+              <li>• Who is favorite in climbing</li>
+              <li>• Nature</li>
+              <br>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg  btn-outline-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 rounded-3 shadow-sm">
+          <div class="card-header py-3 class="ard-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Plan A + D</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$25520-26820</h1>
+            <ul class="list-unstyled mt-3 mb-3">
+              <li>• Leisure itinerary</li>
+              <li>• Also can close to nature</li>
+              <li>• Can see different view than your country</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Plan B + C</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$25520-26820</h1>
+            <ul class="list-unstyled mt-3 mb-3">
+              <li>• Medium difficulty</li>
+              <li>• Go to two different mountains to see Taiwan beautiful view</li>
+              <li>• Close nature</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg  btn-outline-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Plan B + D</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$25520-26820</h1>
+            <ul class="list-unstyled mt-3 mb-3">
+              <li>• Make a sightseeing tour</li>
+              <li>• Easy to finish</li>
+              <li>• Close nature</li>
+              <br>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2023 Engish_presentation, Inc. </p>
+  </footer>
+</main>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      
+  </body>
+</html>
